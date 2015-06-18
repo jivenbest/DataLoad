@@ -3,7 +3,8 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".performance">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="cn.wilson.dataload.optimized">
 
     <Button
         android:id="@+id/btnFirst"
@@ -18,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+
     <Button
         android:id="@+id/btnAgain"
         android:layout_below="@+id/btnInital"
@@ -28,21 +30,14 @@
     <Button
         android:id="@+id/btnTest"
         android:layout_below="@+id/btnAgain"
-        android:text="查看优化后的效果"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/resRawHttp"
-        android:layout_below="@+id/btnTest"
-        android:text="等待测试，显示测试结果"
-        android:layout_marginTop="18dp"
+        android:text="查看原始的效果"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/resVolley"
-        android:layout_below="@+id/resRawHttp"
+        android:layout_below="@+id/btnTest"
+        android:text="等待测试，显示测试结果"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
